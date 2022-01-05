@@ -54,3 +54,8 @@
 	font-size: large;
     text-align: center;
 }
+
+.wa, .tg {
+	height: 50px;
+	width: 50px;
+}
