@@ -6,19 +6,27 @@
     <meta name="viewport" content="width=device-width" />
     <title>WelitonMiranda</title>
 
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lilita+One&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body onload="largura = document.body.scrollWidth;altura = document.body.scrollHeight;">
+    <script src="js/matrix.js"></script>
     <section class="saudacao">
         <h1 class="saudacao__t">Seja bem vindo</h1>
         <span class="f">ou Seja bem vinda!</span>
-        <p class="saudacao__p">Meu nome é Weliton Miranda<br>Sou estudante de Sistema de Informações.</p>
+        <p class="saudacao__p">Meu nome é <u>Weliton Miranda</u><br>Sou estudante de Sistema de Informações.</p>
     </section>
 
     <section class="imgEu">
-        <img src="img/eu.jpg">
+        <img id="img" src="img/eu.jpg">
+        <div class="flash">
+            <i class="theFlash"></i>
+        </div>
     </section>
 
     <section class="contato">
@@ -28,11 +36,11 @@
 
     <section class="message">
         <a href="https://wa.me/5527999120421" target="_blank">
-            <img src="img/wa.png" style="width:10%;height:10%;">
+            <img class="message__wa" src="img/wa.png">
         </a>
 
         <a href="https://t.me/Welitonma" target="_blank">
-            <img src="img/tg.png" style="width:10%;height:10%;">
+            <img class="message__tg" src="img/tg.png">
         </a>
     </section>
 </body>
