@@ -59,8 +59,8 @@ function cai(nome, top, cx, tfont) {
             document.body.removeChild(document.getElementById(nome));
         }
 
-    }, 100);
+    }, 300);
 }
 
 
-window.setInterval(function () { cria() }, 100);
+window.setInterval(function () { cria() }, 300);
