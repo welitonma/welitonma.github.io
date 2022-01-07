@@ -12,25 +12,11 @@ body {
 	text-align: center;
 }
 
-.saudacao__t, .f{	
-	font-size: 5rem;	
-	text-shadow: 4px 4px 4px;
-	font-family: 'Alfa Slab One', cursive;
-}
-
-.saudacao__t {
+.saudacao__t {   	
 	margin-top: 3rem;
+	text-shadow: 4px 4px 4px;  
+	font-family: 'Alfa Slab One', cursive;
 	color: rgba(0, 0, 0, 0.8);
-}
-
-.f {
-	color: rgba(255, 192, 203, 0.6);
-	display: none;
-	padding: 10px;
-}
-
-.saudacao__t:hover + .f {
-	display: block;
 }
 
 /* imagem */
@@ -41,23 +27,17 @@ body {
 }
 
 #img {
-	box-shadow: 5px 5px 5px 0 rgba(7, 54, 66, 0.411);
 	border-radius: 500px;
 }
 
-#img:hover {
-	box-shadow: 1px 1px 1px 0 rgba(7, 54, 66, 0.411);
-	-webkit-transform: scale(0.99);
-    -ms-transform: scale(0.99);
-    transform: scale(0.99);
-}
+
 
 /* imagem end*/
 
-.saudacao__p, .contato__p {
+.saudacao__p, .contato__p, .call {
 	font-size: 1.5rem;
 	padding: 1.2rem;
-	color: rgb(1, 50, 63);
+	color: rgba(0, 0, 0, 0.8);
 	font-family: 'Lilita One', cursive;
 }
 
@@ -66,19 +46,21 @@ body {
 	padding: 4rem;
 }
 
-.message {
+.rSocial {
 	display: flex;
 	justify-content: center;
 }
 
-.message__tg, .message__wa {
+.sendMe__tg, .sendMe__wa {
 	padding: 0 3rem 0;
 	padding-bottom: 3rem;
-	width: 100px;
 }
 
-.message__tg:hover, .message__wa:hover {
-	-webkit-transform: scale(1.3);
-    -ms-transform: scale(1.3);
-    transform: scale(1.3);
+.call {
+	display: flex;
+	justify-content: center;
+}
+
+.call__l {
+	padding-left: calc(5px);
 }
