@@ -3,12 +3,13 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WelitonMiranda</title>
 
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/responsive.css">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Lilita+One&display=swap" rel="stylesheet">
@@ -16,33 +17,39 @@
 
 <body onload="largura = document.body.scrollWidth;altura = document.body.scrollHeight;">
     <script src="js/matrix.js"></script>
-    <section class="saudacao">
-        <h1 class="saudacao__t">Seja bem vindo</h1>
-        <span class="f">ou Seja bem vinda!</span>
-        <p class="saudacao__p">Meu nome é <u>Weliton Miranda</u><br>Sou estudante de Sistema de Informações.</p>
-    </section>
+    <header class="saudacao">
+        <h1 class="saudacao__t">Weliton Miranda</h1> 
+        <p class="saudacao__p">Estudante de Sistema de Informações.</p>      
+    </header>
 
-    <section class="imgEu">
+    <main class="imgEu">
         <img id="img" src="img/eu.jpg">
         <div class="flash">
             <i class="theFlash"></i>
         </div>
-    </section>
+    </main>
 
     <section class="contato">
-        <p class="contato__p">Para falar comigo, clique no icone abaixo do mensageiro que preferir.</p>
+        <p class="contato__p">Para falar comigo, <br>clique no icone abaixo do app que preferir.</p>
     </section>
 
 
-    <section class="message">
-        <a href="https://wa.me/5527999120421" target="_blank">
-            <img class="message__wa" src="img/wa.png">
-        </a>
+    <footer class="sendMe">
+        <social class="rSocial">
+            <a href="https://wa.me/5527999120421" target="_blank">
+                <img class="sendMe__wa" src="img/wa.png">
+            </a>
+            <a href="https://t.me/Welitonma" target="_blank">
+                <img class="sendMe__tg" src="img/tg.png">
+            </a>            
+        </social>
 
-        <a href="https://t.me/Welitonma" target="_blank">
-            <img class="message__tg" src="img/tg.png">
-        </a>
-    </section>
+        <contato class="call" >
+            <p class="call__p">Ou se preferir ligar é só</p>
+            <a  class="call__l" href="tel:027999120421" target="_blank">clicar aqui!                
+            </a>
+        </contato>
+    </footer>
 </body>
 
 </html>
